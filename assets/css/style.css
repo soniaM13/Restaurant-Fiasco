@@ -1,0 +1,644 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.625;
+    margin: 0;
+    color: #6F6F6F;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
+        url(../img/eggs.jpg) center center / cover no-repeat;
+    color: #FFF;
+}
+
+.topbar {
+    padding: 18px 20px;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-item:hover {
+    color: #C89446;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.baseline {
+    padding: 50px 0 70px 0;
+    text-align:center;
+    line-height: 1;
+}
+
+.baseline-welcome {
+    font-family: 'Pinyon Script', serif;
+    color: #C89446;
+    display: block;
+    font-size: 2.2rem;
+}
+
+.baseline-name {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.baseline-slogan {
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu-button {
+    border: solid 1px #C89446; 
+    padding: 7px 10px;
+    transition-property: color, background-color;
+    margin-top: 5px;
+}
+
+.menu-button:hover {
+    background: #C89446;
+    color: #FFF;
+}
+
+.home-section {
+    padding-top: 9px;
+}
+
+.container-small {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 960px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1150px;
+}
+
+.block {
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0 0 0;
+}
+
+.title span {
+    font-family: 'Pinyon Script', serif;
+    color: #C89446;
+    font-size: 2.5rem;
+    display:block;
+    text-transform: none;
+}
+
+.title::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #C89446;
+    margin-bottom: .5rem;
+}
+
+.more {
+    color: #C89446;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+.more::after {
+    content: ' >';
+}
+
+.block-img {
+    max-width: 350px;
+    margin: 0 auto;
+    border: solid 1px #C89446;
+}
+
+.block-img img {
+    display: block;
+}
+
+.block-img img {
+    position: relative;
+    z-index: 1;
+}
+
+.block-centered {
+    text-align: center;
+}
+
+.block-centered .block-body {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingredients-menu {
+    margin: 40px 0;
+    font-weight: 600;
+    color: #383838;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ingredients-menu a {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+.ingredients-menu a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    opacity: 0;
+    background: #C89446;
+    transition: .3s;
+}
+
+.ingredients-menu .active::after, .ingredients-menu a:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.menu-summary-item {
+    position: relative;
+    padding-left: 120px;
+    margin-bottom: 30px;
+}
+
+.menu-summary-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+.menu-summary-title {
+    font-size: 1.125rem;
+    color: #383838;
+    font-weight: bold;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0;
+}
+
+.menu-summary p {
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.menu-summary-price {
+    font-family: 'Pinyon Script', serif;
+    color: #C89446;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.reservation {
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)), 
+        url(../img/reservation.jpg) center center / cover no-repeat;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 50px 0;
+}
+
+.reservation .title {
+    color: #FFF;
+}
+
+.reservation input, .reservation select {
+    padding: 0 0.5rem;
+    width: 100%;
+    margin-bottom: 15px;
+    border: solid 1px #6F6F6F;
+    background: transparent;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 0.875rem;
+    color: #FFF;
+    font-family: 'Source Sans Pro', serif;
+    transition: background .3s, border-color .3s;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.reservation select {
+    background: no-repeat right 0.5rem center url(../img/select.svg);
+}
+
+.reservation input:focus, .reservation select:focus{
+    background-color: rgba(255,255,255, .1);
+    border-color: #C89446;
+}
+
+.reservation .button {
+    width: 100%;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #FFF;
+    background: #C89446;
+    border: none;
+    border: solid 1px transparent;
+    padding: 11px 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    border: solid 1px #C89446;
+    background: transparent;
+}
+
+.reservation p {
+    max-width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation .block-centered .block-body {
+    max-width: 825px;
+}
+
+select option {
+    color: #000;
+}
+section.recipes div.container h2.title{
+    text-align:right;
+}
+section.recipes div.container p.title-2{
+    text-align:right;
+}
+.recipes{
+    padding: 50px 0;
+    background: no-repeat top left / 50vw auto url(../img/news-bg.jpg);
+}
+.recipes-list{
+    font-weight: 300;
+}
+.recipes-list strong{
+    color:#383838;
+    font-weight: bold;
+    font-size:1.125rem;
+}
+.recipes-list-item{
+    border-bottom:solid 1px #f2f2f2;
+    padding-bottom:20px 0;
+}
+.recipes-list-item:last-child{
+    border-bottom:0;
+    
+}
+.map{
+    width: 100%;
+    height: 460px;
+    margin-bottom: -8px;
+}
+.footer{
+    background: #383838;
+    font-weight: 300;
+    color:white;
+    background-image:url(../img/splash.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.footer-columns{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-column{
+    width: 300px;
+    margin-right:50px;
+}
+.footer-title{
+    color:#C89446;
+    margin-bottom:1.25em;
+    font-weight: bold;
+}
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+    .logo {
+        /* Le titre le Fiasco sur la nav bar a une marge du bas réglé en automatique */
+        margin-bottom: 0;
+    }
+    .topbar {
+        /* pour avoir la nav en sur la même ligne */
+        display: flex;  
+        /* aligne le titre Fiasco */
+        align-items: center;
+        /* intervalle régulier entre les titres */
+        justify-content: space-between;
+        /* Maxi taille */
+        max-width: 1150px;
+        /* Marge automatique centré de partout */
+        margin: 0 auto;
+    }
+    .baseline {
+        /* je règle les marges intérieur du titre Welcome */
+        padding: 125px 0 230px;
+    }
+    /* Je modifie la taille de la police du titre Spécialité Méditerranéenne */
+    .baseline-slogan {
+        font-size: 1.5rem;
+    }
+    .baseline-name {
+        /* Je modifie la taille de la police du titre THE FIASCO */
+        font-size: 4.375rem;
+        /* Je règle l'espace entre les lettres */
+        letter-spacing: 12px;
+        /* Je règle la marge en haut entre les titres: Fiasco et welcome */
+        padding-top: 8px;
+        /* Je règle la marge en bas entre les titres: Fiasco et Spécialité Méditerranéenne  */
+        padding-bottom: 18px;
+    }
+    /* Je change la taille du titre Welcome */
+    .baseline-welcome {
+        font-size: 3.75rem;
+    }
+   
+    .menu-button {
+         /* Je règle la marge extérieur en haut du bouton réserver */
+        margin-top: 0;
+        /* Je règle la marge sur la droite à zéro du bouton réserver */
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .block {
+        margin-bottom: 100px;
+    }
+
+    .block-last {
+        margin-bottom: 60px;
+    }
+
+    .block-left, .block-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .block-img {
+        border: none;
+        position: relative;
+    }
+
+    .block-left .block-body, .block-right .block-body {
+        width: 445px;
+        flex: none;
+    }
+
+    .block-img::before {
+        /* Faire apparaître le losange orange  */
+        content: '';
+        display: block;
+        /* Régler la largeur du bord du losange orange */
+        border: solid 1px #C89446;
+        /* Centrer le losange orange */
+        position: absolute;
+        /* Régler la position du haut du losange */
+        top: -30px;
+        /* Régler la position du losange sur la gauche */
+        left: -30px; 
+        /* Régler la taille du losange */
+        width: 100%;
+        /* Régler la hauteur du losange */
+        height: 100%;
+        z-index: 0;
+    }
+
+    .block-right .block-img::before {
+        left: auto;
+        right: -30px;
+    }
+
+    .block-left .block-img {
+        margin-left: 30px;
+    }
+
+    .block-right .block-img {
+        margin-right: 30px;
+    }
+
+    .block-left .block-body {
+        margin-left: 20px;
+    }
+
+    .block-right .block-body {
+        margin-right: 20px;
+        order: -1;
+    }
+
+    .title {
+        margin-bottom: 1.2rem;
+    }
+
+    .title::before {
+        margin-bottom: 10px;
+    }
+
+    .more {
+        /* Je modifie l'espace avec display block en le dimunuant dans See more */
+        display: block;
+        /* Je modifie plus d'espace du haut de see more */
+        margin-top: 1.3rem;
+    }
+
+    .home-section {
+    
+        background: 
+          /* Je rajoute l'image de l'orange sur le côté droit */
+            fixed top 95px right 0px url(../img/oranges.jpg) no-repeat,
+              /* Je rajoute l'image de l'épice sur le côté gauche */
+            fixed top 640px left 0px url(../img/spices.jpg) no-repeat;
+    }
+
+    .ingredients-menu a {
+        /* Je règle la marge espacé vers la droite de 32px pour le menu */
+        margin: 0 32px;
+    }
+
+    .menu-summary {
+        /* La position relative me permets de positionner mon losange orange */
+        position: relative;
+        /* Je règle l'espace en haut entre le menu et les quatres photos  */
+        padding: 85px 0;
+        /* Avec display flex je regroupe les quatres images face à face  */
+        display: flex;
+        /* Je règle automatiquementle les distance du lozange et son écartement */
+        justify-content: space-between;
+        /* Je régle les images face à face au lieu de côte à côte */
+        flex-wrap: wrap;
+    }
+
+    .menu-summary-item {
+        padding-left: 192px;
+        margin-bottom: 110px;
+        width: calc(50% - 40px);
+    }
+
+    .menu-summary-item:nth-child(even) {
+        /* J'aligne le texte à droite des quatres photos */
+        text-align: right;
+        /* Règler la marge intérieure du texte vers la gauche */
+        padding-left: 0;
+        /* Règler la marge intérieure du texte vers la droite */
+        padding-right:  192px;
+    }
+
+    .menu-summary-item:nth-child(even) .menu-summary-img {
+        left: auto;
+        right: 0;
+    }
+
+    .menu-summary-item:nth-child(even) .menu-summary-price {
+        margin-left: auto;
+    }
+
+    .menu-summary-img {
+        /* Taille de des quatres image dans le menu */
+        width: 160px;
+    }
+
+    .menu-summary-title {
+        margin-top: 0;
+        line-height: 1.2;
+        background: #FFF;
+    }
+
+    .menu-summary p {
+        background: #FFf;
+    }
+
+    .menu-summary-price {
+        /* Marge au dessus du prix entre le texte */
+        padding-top: 4px;
+        /* Largeur du prix */
+        width: 85px;
+        /* Couleurs à l'arrière du prix */
+        background: #FFF;
+    }
+
+    .menu-summary::before {
+        /* Appel le losange orange */
+        content:'';
+        /* La position absolute fixe le losange orange */
+        position: absolute;
+        display: block;
+        /* Centre le losange orange en mettant le top et left à 50% */
+        top: 50%;
+        left: 50%;
+        /* Largeur du losange orange */
+        width: 420px;
+        /* Hauteur du losange orange  */
+        height: 420px;
+        /* Largeur du trait du contour losange orange */
+        border: solid 1px #C89446;
+        /* Transforme un carré en losange */
+        transform: translate(-50%, -260px) rotate(45deg);
+    }
+    
+    .block-chief {
+        /* Le display flex me permets d'avoir le texte à côté de l'image du chef */
+        display: flex;
+        /* Centre le texte */
+        align-items: center;
+        /* Règle la marge du bas entre see more et réservation */
+        margin-bottom: 0px;
+    }
+
+    .block-chief .block-img::before {
+        /* JE NE TROUVE PAS ??? */
+        display: none;
+    }
+
+    .block-chief .block-img {
+        
+         /* JE NE TROUVE PAS ??? */
+        flex: none;
+        width: 404px;
+        order: 2;
+    }
+
+    .reservation {
+        /* Règle la marge intérieur du contour de l'image avec plus d'espace */
+        padding: 100px 0;
+    }
+
+    .reservation-form-row {
+      
+        margin: 64px 0;
+          /* Avec display flex je peux régler les écarts d'inerval en n'appelant ensuite la commande en dessous pour centrer le tout
+           et régler les même distance avec space-between */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reservation-form-row input, .reservation-form-row select {
+        /* Calcul la bonne marge régulière d'écartement entre les trois tableaux infos réservation */
+        width: calc(33.33% - 20px);
+        /* Marge vers le bas réglé à zéro */
+        margin-bottom: 0;
+    }
+
+    .reservation .button {
+        width: calc(33.33% - 20px);
+    }
+}
